@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:color="#ffDCF0F7"
+		android:state_enabled="true" />
+	<item
+	    android:color="#ff5E9DC8"
+	    android:state_enabled="false" />
+</selector><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/color/toggle_button_text.xml -->

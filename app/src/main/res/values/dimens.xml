@@ -1,0 +1,81 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="Scrollview_Leftmargin">15dp</dimen>
+    <dimen name="scrollview_topmargin">5dp</dimen>
+    <dimen name="image_padding">5dp</dimen>
+    <dimen name="thumbnail_width">50dp</dimen>
+    <dimen name="thumbnail_height">50dp</dimen>
+    <dimen name="image_width">400dp</dimen>
+    <dimen name="image_height">400dp</dimen>
+    <dimen name="textfield_padding">4dp</dimen>
+    <dimen name="paheheader_height">32dp</dimen>
+    <dimen name="button_height">42dp</dimen>
+    <dimen name="menubar_button_width">60dp</dimen>
+    <dimen name="menubar_button_size">30dp</dimen> 
+    
+    <dimen name="main_double_button_height">80dp</dimen>
+    <dimen name="main_button_height">50dp</dimen>
+    
+    <dimen name="pageheader_textsize">30dp</dimen>
+    <dimen name="pageheader_listactivity_textsize">40sp</dimen>
+    <dimen name="home_page_button_textsize">20sp</dimen>
+    <dimen name="tagviewheader_textsize">16dp</dimen>
+    <dimen name="userprofile_header_textsize">45dp</dimen>
+    <dimen name="userprofile_textsize">18dp</dimen>
+    
+    <dimen name="newtag_button_minheight">30dp</dimen>
+    <dimen name="newtag_button_minwidth">75dp</dimen>
+    <dimen name="newtag_button_textsize">14dp</dimen>
+    
+    <dimen name="tabs_textsize">20dp</dimen>
+    <dimen name="tabs_tabheight">40dp</dimen>
+    
+    <dimen name="tagview_button_textsize">14dp</dimen>
+    <dimen name="tagview_image_height">180dp</dimen>
+    <dimen name="tagview_button_divider_height">25dp</dimen>
+
+    <dimen name="togglebutton_button_height">40dp</dimen>
+    <dimen name="togglebutton_selected_height">5dp</dimen>
+    
+	<dimen name="advview_image_height">100dp</dimen>
+    
+	<dimen name="detail_description_textsize">16dp</dimen>
+	<dimen name="detail_date_textsize">12dp</dimen>
+	<dimen name="detail_location_textsize">12dp</dimen>
+	
+	<dimen name="editprofile_image_size">148dp</dimen>
+	<dimen name="editprofile_label_textsize">22sp</dimen>
+	<dimen name="editprofile_button_margin">3dp</dimen>
+	<dimen name="editprofile_button_textsize">20sp</dimen>
+
+	<!-- List Entry dimensions -->
+	<dimen name="list_people_textsize">12sp</dimen>
+	<dimen name="list_description_textsize">12sp</dimen>
+	<dimen name="listheader_padding">6dp</dimen>
+	<dimen name="listheader_padding_bottom">3dp</dimen>
+	<dimen name="listheader_title_textsize">15dp</dimen>
+	<dimen name="listheader_time_textsize">12dp</dimen>
+			
+	<!-- Data entry label dimensions -->
+    <dimen name="label_textsize">14dp</dimen>
+	
+	<!-- Data entry fields TextEdit dimensions -->
+	<dimen name="dataentry_textsize">18sp</dimen>
+	<dimen name="dataentry_textpadding">4dp</dimen>
+	<dimen name="dataentry_labelpadding">2dp</dimen>
+	
+	<!-- Add/Edit Tag Image sizes -->
+	<dimen name="tag_image_max_size">400dp</dimen>
+	<dimen name="addtag_image_height">300dp</dimen>
+		
+	<!-- Add/Edit Comment sizes -->
+	<dimen name="addcomment_image_height">300dp</dimen>
+	
+	<!-- Image Button sizes -->
+	<dimen name="image_button_layout_size">40dp</dimen>
+	<dimen name="image_button_image_size">32dp</dimen>
+	<dimen name="image_button_layout_margin">5dp</dimen>
+			
+</resources>

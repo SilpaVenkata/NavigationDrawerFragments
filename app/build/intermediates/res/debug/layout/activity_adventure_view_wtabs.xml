@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:scrollingCache="false" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/advview_image_height"
+            android:scrollingCache="false" >
+
+            <TextView
+                android:id="@+id/adventureView_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/GeotaggerLookAndFeelTextMedium"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/scrollview_topmargin"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="@string/location" />
+        </ScrollView>
+
+	<!-- Row of toggle buttons -->
+	<TextView style="@style/GeotaggerLookAndFeelDividerHorizontal" />
+	<LinearLayout
+		android:id="@+id/tab_buttons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:background="@color/togglebutton_background_color"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:weightSum="2" >
+		
+		<LinearLayout
+	        android:id="@+id/tags_button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:enabled="false"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabButton"
+		        android:text="@string/tags_text"
+	            />
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabIndicator" />
+		</LinearLayout>
+	        
+	    <TextView style="@style/GeotaggerLookAndFeelTabDivider" />
+	    
+		<LinearLayout
+	        android:id="@+id/map_button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:enabled="false"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabButton"
+		        android:text="@string/map_text"
+	            />
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabIndicator" />
+		</LinearLayout>
+	        
+	</LinearLayout>
+	<TextView style="@style/GeotaggerLookAndFeelDividerHorizontal" />
+		
+	<FrameLayout
+	    android:id="@+id/advViewContent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >	    
+	</FrameLayout>
+	
+	<LinearLayout
+	    android:id="@+id/mapViewContent"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		<fragment
+			android:id="@+id/map"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:name="com.google.android.gms.maps.MapFragment"/>
+	</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_adventure_view_wtabs.xml -->

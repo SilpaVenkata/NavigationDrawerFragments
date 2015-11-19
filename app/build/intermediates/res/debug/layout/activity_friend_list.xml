@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/GeotaggerLookAndFeelActivity" >
+
+    <TextView
+        android:id="@+id/friendlist_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/pageheader"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/friends_header"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pageheader_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="393dp"
+        android:layout_below="@id/friendlist_username"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/friends_emptylbl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/list_no_friends" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friends_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/greenbutton"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <ImageButton
+                android:id="@+id/friends_btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_addfriend" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_friend_list.xml -->

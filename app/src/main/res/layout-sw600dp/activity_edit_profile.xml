@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+	style="@style/GeotaggerLookAndFeelActivity"
+    android:paddingLeft="@dimen/Scrollview_Leftmargin"
+    android:paddingRight="@dimen/Scrollview_Leftmargin"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/editprofile_username"
+            style="@style/GeotaggerLookAndFeelPageHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/edit_profile" />
+
+        <ImageView
+            android:id="@+id/editprofile_imageview"
+            android:layout_width="@dimen/editprofile_image_size"
+            android:layout_height="@dimen/editprofile_image_size"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="@string/edit_profile_img"
+            android:longClickable="true"
+            android:maxHeight="@dimen/image_height"
+            android:maxWidth="@dimen/image_width"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_addphoto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/editprofile_locationtxt"
+                style="@style/GeotaggerLookAndFeelFieldLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_text" />
+
+            <EditText
+                android:id="@+id/editprofile_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/location"
+                android:inputType="textCapWords"
+                android:layout_marginTop="@dimen/dataentry_labelpadding"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/editprofile_aboutme"
+                style="@style/GeotaggerLookAndFeelFieldLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="5"
+                android:text="@string/about_me" />
+
+            <EditText
+                android:id="@+id/editprofile_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/about_me_hint"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="2"
+                android:minLines="2"
+                android:layout_marginTop="@dimen/dataentry_labelpadding"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+
+            <TextView
+                android:id="@+id/editprofile_quotelbl"
+                style="@style/GeotaggerLookAndFeelFieldLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/favorite_quote" />
+
+            <EditText
+                android:id="@+id/editprofile_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/favorite_quote_hint"
+                android:inputType="textCapSentences|textPersonName"
+                android:layout_marginTop="@dimen/dataentry_labelpadding"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+
+            <TextView
+                android:id="@+id/editprofile_emaillbl"
+                style="@style/GeotaggerLookAndFeelFieldLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/email_address" />
+
+            <EditText
+                android:id="@+id/editprofile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/email_address_hint"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="@dimen/dataentry_labelpadding"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/editprofile_cancelBtn"
+		            android:layout_width="0dp"
+            		android:layout_height="@dimen/button_height"
+            		android:layout_weight=".5"
+                    android:layout_marginRight="4dp"
+		            android:background="@drawable/bluebutton"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/editprofile_saveBtn"
+		            android:layout_width="0dp"
+            		android:layout_height="@dimen/button_height"
+            		android:layout_weight=".5"
+                    android:layout_marginLeft="4dp"
+		            android:background="@drawable/bluebutton"
+        		    android:text="@string/save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >   
+	
+	<ListView
+        android:id="@+id/tag_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight=".85" 
+   		android:divider="@null"
+		android:dividerHeight="0dp"
+		android:scrollingCache="false"/>
+	    
+	<Button
+	    android:id="@+id/advViewTagTab_btnNewTag"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/button_height"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:background="@drawable/bluebutton"
+	    android:text="@string/add_tag"/>
+	
+</LinearLayout>

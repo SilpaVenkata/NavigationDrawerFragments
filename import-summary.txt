@@ -1,0 +1,580 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+* Arrow.png
+* Arrow.xcf
+* README
+* debug.keystore
+* debug/
+* debug/LoginData.xml
+* doc.zip
+* doc/
+* doc/activities/
+* doc/activities/allclasses-frame.html
+* doc/activities/allclasses-noframe.html
+* doc/activities/com/
+* doc/activities/com/hci/
+* doc/activities/com/hci/geotagger/
+* doc/activities/com/hci/geotagger/activities/
+* doc/activities/com/hci/geotagger/activities/AddTagActivity.AddTagTask.html
+* doc/activities/com/hci/geotagger/activities/AddTagActivity.html
+* doc/activities/com/hci/geotagger/activities/AdvEditPeopleTabActivity.UserAdapter.html
+* doc/activities/com/hci/geotagger/activities/AdvEditPeopleTabActivity.html
+* doc/activities/com/hci/geotagger/activities/AdvEditTagTabActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/AdvEditTagTabActivity.html
+* doc/activities/com/hci/geotagger/activities/AdvViewPeopleTabActivity.UserAdapter.html
+* doc/activities/com/hci/geotagger/activities/AdvViewPeopleTabActivity.html
+* doc/activities/com/hci/geotagger/activities/AdvViewTagTabActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/AdvViewTagTabActivity.html
+* doc/activities/com/hci/geotagger/activities/AdventureListActivity.AdventureAdapter.html
+* doc/activities/com/hci/geotagger/activities/AdventureListActivity.html
+* doc/activities/com/hci/geotagger/activities/AdventureViewActivity.html
+* doc/activities/com/hci/geotagger/activities/CommentViewActivity.DownloadImage.html
+* doc/activities/com/hci/geotagger/activities/CommentViewActivity.html
+* doc/activities/com/hci/geotagger/activities/EditAdventureActivity.AddAdvTask.html
+* doc/activities/com/hci/geotagger/activities/EditAdventureActivity.html
+* doc/activities/com/hci/geotagger/activities/EditProfileActivity.html
+* doc/activities/com/hci/geotagger/activities/FriendListActivity.FriendAdapter.html
+* doc/activities/com/hci/geotagger/activities/FriendListActivity.html
+* doc/activities/com/hci/geotagger/activities/HomeActivity.html
+* doc/activities/com/hci/geotagger/activities/LoginActivity.LoginTask.html
+* doc/activities/com/hci/geotagger/activities/LoginActivity.html
+* doc/activities/com/hci/geotagger/activities/MapViewActivity.html
+* doc/activities/com/hci/geotagger/activities/RegisterActivity.RegisterTask.html
+* doc/activities/com/hci/geotagger/activities/RegisterActivity.html
+* doc/activities/com/hci/geotagger/activities/TagListActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/TagListActivity.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity.CommentAdapter.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity.MyLocationListener.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity_Phone.CommentAdapter.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity_Phone.MyLocationListener.html
+* doc/activities/com/hci/geotagger/activities/TagViewActivity_Phone.html
+* doc/activities/com/hci/geotagger/activities/UserProfileActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/
+* doc/activities/com/hci/geotagger/activities/class-use/AddTagActivity.AddTagTask.html
+* doc/activities/com/hci/geotagger/activities/class-use/AddTagActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvEditPeopleTabActivity.UserAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvEditPeopleTabActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvEditTagTabActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvEditTagTabActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvViewPeopleTabActivity.UserAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvViewPeopleTabActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvViewTagTabActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdvViewTagTabActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdventureListActivity.AdventureAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdventureListActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/AdventureViewActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/CommentViewActivity.DownloadImage.html
+* doc/activities/com/hci/geotagger/activities/class-use/CommentViewActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/EditAdventureActivity.AddAdvTask.html
+* doc/activities/com/hci/geotagger/activities/class-use/EditAdventureActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/EditProfileActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/FriendListActivity.FriendAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/FriendListActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/HomeActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/LoginActivity.LoginTask.html
+* doc/activities/com/hci/geotagger/activities/class-use/LoginActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/MapViewActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/RegisterActivity.RegisterTask.html
+* doc/activities/com/hci/geotagger/activities/class-use/RegisterActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagListActivity.TagAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagListActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity.CommentAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity.MyLocationListener.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.CommentAdapter.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.MyLocationListener.html
+* doc/activities/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.html
+* doc/activities/com/hci/geotagger/activities/class-use/UserProfileActivity.html
+* doc/activities/com/hci/geotagger/activities/package-frame.html
+* doc/activities/com/hci/geotagger/activities/package-summary.html
+* doc/activities/com/hci/geotagger/activities/package-tree.html
+* doc/activities/com/hci/geotagger/activities/package-use.html
+* doc/activities/com/hci/geotagger/cache/
+* doc/activities/com/hci/geotagger/cache/CacheAction.html
+* doc/activities/com/hci/geotagger/cache/CacheDatabase.CacheRef.html
+* doc/activities/com/hci/geotagger/cache/CacheDatabase.html
+* doc/activities/com/hci/geotagger/cache/CacheHandler.html
+* doc/activities/com/hci/geotagger/cache/class-use/
+* doc/activities/com/hci/geotagger/cache/class-use/CacheAction.html
+* doc/activities/com/hci/geotagger/cache/class-use/CacheDatabase.CacheRef.html
+* doc/activities/com/hci/geotagger/cache/class-use/CacheDatabase.html
+* doc/activities/com/hci/geotagger/cache/class-use/CacheHandler.html
+* doc/activities/com/hci/geotagger/cache/package-frame.html
+* doc/activities/com/hci/geotagger/cache/package-summary.html
+* doc/activities/com/hci/geotagger/cache/package-tree.html
+* doc/activities/com/hci/geotagger/cache/package-use.html
+* doc/activities/com/hci/geotagger/common/
+* doc/activities/com/hci/geotagger/common/AlertHandler.html
+* doc/activities/com/hci/geotagger/common/BaseActivity.html
+* doc/activities/com/hci/geotagger/common/Constants.html
+* doc/activities/com/hci/geotagger/common/LocationHandler.html
+* doc/activities/com/hci/geotagger/common/MyUserAccount.html
+* doc/activities/com/hci/geotagger/common/NetworkUtils.html
+* doc/activities/com/hci/geotagger/common/UserSession.html
+* doc/activities/com/hci/geotagger/common/class-use/
+* doc/activities/com/hci/geotagger/common/class-use/AlertHandler.html
+* doc/activities/com/hci/geotagger/common/class-use/BaseActivity.html
+* doc/activities/com/hci/geotagger/common/class-use/Constants.html
+* doc/activities/com/hci/geotagger/common/class-use/LocationHandler.html
+* doc/activities/com/hci/geotagger/common/class-use/MyUserAccount.html
+* doc/activities/com/hci/geotagger/common/class-use/NetworkUtils.html
+* doc/activities/com/hci/geotagger/common/class-use/UserSession.html
+* doc/activities/com/hci/geotagger/common/package-frame.html
+* doc/activities/com/hci/geotagger/common/package-summary.html
+* doc/activities/com/hci/geotagger/common/package-tree.html
+* doc/activities/com/hci/geotagger/common/package-use.html
+* doc/activities/constant-values.html
+* doc/activities/deprecated-list.html
+* doc/activities/help-doc.html
+* doc/activities/index-files/
+* doc/activities/index-files/index-1.html
+* doc/activities/index-files/index-10.html
+* doc/activities/index-files/index-11.html
+* doc/activities/index-files/index-12.html
+* doc/activities/index-files/index-13.html
+* doc/activities/index-files/index-14.html
+* doc/activities/index-files/index-15.html
+* doc/activities/index-files/index-16.html
+* doc/activities/index-files/index-17.html
+* doc/activities/index-files/index-18.html
+* doc/activities/index-files/index-19.html
+* doc/activities/index-files/index-2.html
+* doc/activities/index-files/index-20.html
+* doc/activities/index-files/index-21.html
+* doc/activities/index-files/index-22.html
+* doc/activities/index-files/index-3.html
+* doc/activities/index-files/index-4.html
+* doc/activities/index-files/index-5.html
+* doc/activities/index-files/index-6.html
+* doc/activities/index-files/index-7.html
+* doc/activities/index-files/index-8.html
+* doc/activities/index-files/index-9.html
+* doc/activities/index.html
+* doc/activities/overview-tree.html
+* doc/activities/package-list
+* doc/activities/resources/
+* doc/activities/resources/inherit.gif
+* doc/activities/serialized-form.html
+* doc/activities/stylesheet.css
+* doc/allclasses-frame.html
+* doc/allclasses-noframe.html
+* doc/cache/
+* doc/cache/allclasses-frame.html
+* doc/cache/allclasses-noframe.html
+* doc/cache/com/
+* doc/cache/com/hci/
+* doc/cache/com/hci/geotagger/
+* doc/cache/com/hci/geotagger/cache/
+* doc/cache/com/hci/geotagger/cache/CacheAction.html
+* doc/cache/com/hci/geotagger/cache/CacheDatabase.CacheRef.html
+* doc/cache/com/hci/geotagger/cache/CacheDatabase.html
+* doc/cache/com/hci/geotagger/cache/CacheHandler.html
+* doc/cache/com/hci/geotagger/cache/class-use/
+* doc/cache/com/hci/geotagger/cache/class-use/CacheAction.html
+* doc/cache/com/hci/geotagger/cache/class-use/CacheDatabase.CacheRef.html
+* doc/cache/com/hci/geotagger/cache/class-use/CacheDatabase.html
+* doc/cache/com/hci/geotagger/cache/class-use/CacheHandler.html
+* doc/cache/com/hci/geotagger/cache/package-frame.html
+* doc/cache/com/hci/geotagger/cache/package-summary.html
+* doc/cache/com/hci/geotagger/cache/package-tree.html
+* doc/cache/com/hci/geotagger/cache/package-use.html
+* doc/cache/constant-values.html
+* doc/cache/deprecated-list.html
+* doc/cache/help-doc.html
+* doc/cache/index-files/
+* doc/cache/index-files/index-1.html
+* doc/cache/index-files/index-10.html
+* doc/cache/index-files/index-11.html
+* doc/cache/index-files/index-12.html
+* doc/cache/index-files/index-13.html
+* doc/cache/index-files/index-14.html
+* doc/cache/index-files/index-2.html
+* doc/cache/index-files/index-3.html
+* doc/cache/index-files/index-4.html
+* doc/cache/index-files/index-5.html
+* doc/cache/index-files/index-6.html
+* doc/cache/index-files/index-7.html
+* doc/cache/index-files/index-8.html
+* doc/cache/index-files/index-9.html
+* doc/cache/index.html
+* doc/cache/overview-tree.html
+* doc/cache/package-list
+* doc/cache/resources/
+* doc/cache/resources/inherit.gif
+* doc/cache/stylesheet.css
+* doc/com/
+* doc/com/hci/
+* doc/com/hci/geotagger/
+* doc/com/hci/geotagger/activities/
+* doc/com/hci/geotagger/activities/AddTagActivity.AddTagTask.html
+* doc/com/hci/geotagger/activities/AddTagActivity.html
+* doc/com/hci/geotagger/activities/AdvEditPeopleTabActivity.UserAdapter.html
+* doc/com/hci/geotagger/activities/AdvEditPeopleTabActivity.html
+* doc/com/hci/geotagger/activities/AdvEditTagTabActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/AdvEditTagTabActivity.html
+* doc/com/hci/geotagger/activities/AdvViewPeopleTabActivity.UserAdapter.html
+* doc/com/hci/geotagger/activities/AdvViewPeopleTabActivity.html
+* doc/com/hci/geotagger/activities/AdvViewTagTabActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/AdvViewTagTabActivity.html
+* doc/com/hci/geotagger/activities/AdventureListActivity.AdventureAdapter.html
+* doc/com/hci/geotagger/activities/AdventureListActivity.html
+* doc/com/hci/geotagger/activities/AdventureViewActivity.html
+* doc/com/hci/geotagger/activities/CommentViewActivity.DownloadImage.html
+* doc/com/hci/geotagger/activities/CommentViewActivity.html
+* doc/com/hci/geotagger/activities/EditAdventureActivity.AddAdvTask.html
+* doc/com/hci/geotagger/activities/EditAdventureActivity.html
+* doc/com/hci/geotagger/activities/EditProfileActivity.html
+* doc/com/hci/geotagger/activities/FriendListActivity.FriendAdapter.html
+* doc/com/hci/geotagger/activities/FriendListActivity.html
+* doc/com/hci/geotagger/activities/HomeActivity.html
+* doc/com/hci/geotagger/activities/LoginActivity.LoginTask.html
+* doc/com/hci/geotagger/activities/LoginActivity.html
+* doc/com/hci/geotagger/activities/MapViewActivity.html
+* doc/com/hci/geotagger/activities/RegisterActivity.RegisterTask.html
+* doc/com/hci/geotagger/activities/RegisterActivity.html
+* doc/com/hci/geotagger/activities/TagListActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/TagListActivity.html
+* doc/com/hci/geotagger/activities/TagViewActivity.CommentAdapter.html
+* doc/com/hci/geotagger/activities/TagViewActivity.MyLocationListener.html
+* doc/com/hci/geotagger/activities/TagViewActivity.html
+* doc/com/hci/geotagger/activities/TagViewActivity_Phone.CommentAdapter.html
+* doc/com/hci/geotagger/activities/TagViewActivity_Phone.MyLocationListener.html
+* doc/com/hci/geotagger/activities/TagViewActivity_Phone.html
+* doc/com/hci/geotagger/activities/UserProfileActivity.html
+* doc/com/hci/geotagger/activities/class-use/
+* doc/com/hci/geotagger/activities/class-use/AddTagActivity.AddTagTask.html
+* doc/com/hci/geotagger/activities/class-use/AddTagActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdvEditPeopleTabActivity.UserAdapter.html
+* doc/com/hci/geotagger/activities/class-use/AdvEditPeopleTabActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdvEditTagTabActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/class-use/AdvEditTagTabActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdvViewPeopleTabActivity.UserAdapter.html
+* doc/com/hci/geotagger/activities/class-use/AdvViewPeopleTabActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdvViewTagTabActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/class-use/AdvViewTagTabActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdventureListActivity.AdventureAdapter.html
+* doc/com/hci/geotagger/activities/class-use/AdventureListActivity.html
+* doc/com/hci/geotagger/activities/class-use/AdventureViewActivity.html
+* doc/com/hci/geotagger/activities/class-use/CommentViewActivity.DownloadImage.html
+* doc/com/hci/geotagger/activities/class-use/CommentViewActivity.html
+* doc/com/hci/geotagger/activities/class-use/EditAdventureActivity.AddAdvTask.html
+* doc/com/hci/geotagger/activities/class-use/EditAdventureActivity.html
+* doc/com/hci/geotagger/activities/class-use/EditProfileActivity.html
+* doc/com/hci/geotagger/activities/class-use/FriendListActivity.FriendAdapter.html
+* doc/com/hci/geotagger/activities/class-use/FriendListActivity.html
+* doc/com/hci/geotagger/activities/class-use/HomeActivity.html
+* doc/com/hci/geotagger/activities/class-use/LoginActivity.LoginTask.html
+* doc/com/hci/geotagger/activities/class-use/LoginActivity.html
+* doc/com/hci/geotagger/activities/class-use/MapViewActivity.html
+* doc/com/hci/geotagger/activities/class-use/RegisterActivity.RegisterTask.html
+* doc/com/hci/geotagger/activities/class-use/RegisterActivity.html
+* doc/com/hci/geotagger/activities/class-use/TagListActivity.TagAdapter.html
+* doc/com/hci/geotagger/activities/class-use/TagListActivity.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity.CommentAdapter.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity.MyLocationListener.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.CommentAdapter.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.MyLocationListener.html
+* doc/com/hci/geotagger/activities/class-use/TagViewActivity_Phone.html
+* doc/com/hci/geotagger/activities/class-use/UserProfileActivity.html
+* doc/com/hci/geotagger/activities/package-frame.html
+* doc/com/hci/geotagger/activities/package-summary.html
+* doc/com/hci/geotagger/activities/package-tree.html
+* doc/com/hci/geotagger/activities/package-use.html
+* doc/common/
+* doc/common/allclasses-frame.html
+* doc/common/allclasses-noframe.html
+* doc/common/com/
+* doc/common/com/hci/
+* doc/common/com/hci/geotagger/
+* doc/common/com/hci/geotagger/common/
+* doc/common/com/hci/geotagger/common/AlertHandler.html
+* doc/common/com/hci/geotagger/common/BaseActivity.html
+* doc/common/com/hci/geotagger/common/Constants.html
+* doc/common/com/hci/geotagger/common/LocationHandler.html
+* doc/common/com/hci/geotagger/common/MyUserAccount.html
+* doc/common/com/hci/geotagger/common/NetworkUtils.html
+* doc/common/com/hci/geotagger/common/UserSession.html
+* doc/common/com/hci/geotagger/common/class-use/
+* doc/common/com/hci/geotagger/common/class-use/AlertHandler.html
+* doc/common/com/hci/geotagger/common/class-use/BaseActivity.html
+* doc/common/com/hci/geotagger/common/class-use/Constants.html
+* doc/common/com/hci/geotagger/common/class-use/LocationHandler.html
+* doc/common/com/hci/geotagger/common/class-use/MyUserAccount.html
+* doc/common/com/hci/geotagger/common/class-use/NetworkUtils.html
+* doc/common/com/hci/geotagger/common/class-use/UserSession.html
+* doc/common/com/hci/geotagger/common/package-frame.html
+* doc/common/com/hci/geotagger/common/package-summary.html
+* doc/common/com/hci/geotagger/common/package-tree.html
+* doc/common/com/hci/geotagger/common/package-use.html
+* doc/common/constant-values.html
+* doc/common/deprecated-list.html
+* doc/common/help-doc.html
+* doc/common/index-files/
+* doc/common/index-files/index-1.html
+* doc/common/index-files/index-10.html
+* doc/common/index-files/index-11.html
+* doc/common/index-files/index-12.html
+* doc/common/index-files/index-13.html
+* doc/common/index-files/index-14.html
+* doc/common/index-files/index-15.html
+* doc/common/index-files/index-16.html
+* doc/common/index-files/index-17.html
+* doc/common/index-files/index-18.html
+* doc/common/index-files/index-2.html
+* doc/common/index-files/index-3.html
+* doc/common/index-files/index-4.html
+* doc/common/index-files/index-5.html
+* doc/common/index-files/index-6.html
+* doc/common/index-files/index-7.html
+* doc/common/index-files/index-8.html
+* doc/common/index-files/index-9.html
+* doc/common/index.html
+* doc/common/overview-tree.html
+* doc/common/package-list
+* doc/common/resources/
+* doc/common/resources/inherit.gif
+* doc/common/serialized-form.html
+* doc/common/stylesheet.css
+* doc/connectors/
+* doc/connectors/allclasses-frame.html
+* doc/connectors/allclasses-noframe.html
+* doc/connectors/com/
+* doc/connectors/com/hci/
+* doc/connectors/com/hci/geotagger/
+* doc/connectors/com/hci/geotagger/connectors/
+* doc/connectors/com/hci/geotagger/connectors/AccountHandler.html
+* doc/connectors/com/hci/geotagger/connectors/AdventureHandler.html
+* doc/connectors/com/hci/geotagger/connectors/ImageHandler.html
+* doc/connectors/com/hci/geotagger/connectors/JSONParser.html
+* doc/connectors/com/hci/geotagger/connectors/MapViewHandler.html
+* doc/connectors/com/hci/geotagger/connectors/ReturnInfo.html
+* doc/connectors/com/hci/geotagger/connectors/TagHandler.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/
+* doc/connectors/com/hci/geotagger/connectors/class-use/AccountHandler.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/AdventureHandler.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/ImageHandler.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/JSONParser.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/MapViewHandler.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/ReturnInfo.html
+* doc/connectors/com/hci/geotagger/connectors/class-use/TagHandler.html
+* doc/connectors/com/hci/geotagger/connectors/package-frame.html
+* doc/connectors/com/hci/geotagger/connectors/package-summary.html
+* doc/connectors/com/hci/geotagger/connectors/package-tree.html
+* doc/connectors/com/hci/geotagger/connectors/package-use.html
+* doc/connectors/constant-values.html
+* doc/connectors/deprecated-list.html
+* doc/connectors/help-doc.html
+* doc/connectors/index-files/
+* doc/connectors/index-files/index-1.html
+* doc/connectors/index-files/index-10.html
+* doc/connectors/index-files/index-11.html
+* doc/connectors/index-files/index-12.html
+* doc/connectors/index-files/index-13.html
+* doc/connectors/index-files/index-14.html
+* doc/connectors/index-files/index-15.html
+* doc/connectors/index-files/index-16.html
+* doc/connectors/index-files/index-2.html
+* doc/connectors/index-files/index-3.html
+* doc/connectors/index-files/index-4.html
+* doc/connectors/index-files/index-5.html
+* doc/connectors/index-files/index-6.html
+* doc/connectors/index-files/index-7.html
+* doc/connectors/index-files/index-8.html
+* doc/connectors/index-files/index-9.html
+* doc/connectors/index.html
+* doc/connectors/overview-tree.html
+* doc/connectors/package-list
+* doc/connectors/resources/
+* doc/connectors/resources/inherit.gif
+* doc/connectors/stylesheet.css
+* doc/constant-values.html
+* doc/deprecated-list.html
+* doc/exceptions/
+* doc/exceptions/allclasses-frame.html
+* doc/exceptions/allclasses-noframe.html
+* doc/exceptions/com/
+* doc/exceptions/com/hci/
+* doc/exceptions/com/hci/geotagger/
+* doc/exceptions/com/hci/geotagger/exceptions/
+* doc/exceptions/com/hci/geotagger/exceptions/UnknownErrorException.html
+* doc/exceptions/com/hci/geotagger/exceptions/UsernameIsTakenException.html
+* doc/exceptions/com/hci/geotagger/exceptions/class-use/
+* doc/exceptions/com/hci/geotagger/exceptions/class-use/UnknownErrorException.html
+* doc/exceptions/com/hci/geotagger/exceptions/class-use/UsernameIsTakenException.html
+* doc/exceptions/com/hci/geotagger/exceptions/package-frame.html
+* doc/exceptions/com/hci/geotagger/exceptions/package-summary.html
+* doc/exceptions/com/hci/geotagger/exceptions/package-tree.html
+* doc/exceptions/com/hci/geotagger/exceptions/package-use.html
+* doc/exceptions/constant-values.html
+* doc/exceptions/deprecated-list.html
+* doc/exceptions/help-doc.html
+* doc/exceptions/index-files/
+* doc/exceptions/index-files/index-1.html
+* doc/exceptions/index-files/index-2.html
+* doc/exceptions/index-files/index-3.html
+* doc/exceptions/index.html
+* doc/exceptions/overview-tree.html
+* doc/exceptions/package-list
+* doc/exceptions/resources/
+* doc/exceptions/resources/inherit.gif
+* doc/exceptions/serialized-form.html
+* doc/exceptions/stylesheet.css
+* doc/help-doc.html
+* doc/index-files/
+* doc/index-files/index-1.html
+* doc/index-files/index-10.html
+* doc/index-files/index-11.html
+* doc/index-files/index-12.html
+* doc/index-files/index-13.html
+* doc/index-files/index-14.html
+* doc/index-files/index-15.html
+* doc/index-files/index-16.html
+* doc/index-files/index-17.html
+* doc/index-files/index-18.html
+* doc/index-files/index-19.html
+* doc/index-files/index-2.html
+* doc/index-files/index-20.html
+* doc/index-files/index-21.html
+* doc/index-files/index-22.html
+* doc/index-files/index-3.html
+* doc/index-files/index-4.html
+* doc/index-files/index-5.html
+* doc/index-files/index-6.html
+* doc/index-files/index-7.html
+* doc/index-files/index-8.html
+* doc/index-files/index-9.html
+* doc/index.html
+* doc/objects/
+* doc/objects/allclasses-frame.html
+* doc/objects/allclasses-noframe.html
+* doc/objects/com/
+* doc/objects/com/hci/
+* doc/objects/com/hci/geotagger/
+* doc/objects/com/hci/geotagger/Objects/
+* doc/objects/com/hci/geotagger/Objects/Adventure.html
+* doc/objects/com/hci/geotagger/Objects/Comment.html
+* doc/objects/com/hci/geotagger/Objects/CommentViewFragment.CommentAdapter.html
+* doc/objects/com/hci/geotagger/Objects/CommentViewFragment.ICommentViewCallBack.html
+* doc/objects/com/hci/geotagger/Objects/CommentViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/Compass.html
+* doc/objects/com/hci/geotagger/Objects/DescriptionViewFragment.IDescriptionViewCallback.html
+* doc/objects/com/hci/geotagger/Objects/DescriptionViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/GeoLocation.html
+* doc/objects/com/hci/geotagger/Objects/MapViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/Tag.html
+* doc/objects/com/hci/geotagger/Objects/UserAccount.html
+* doc/objects/com/hci/geotagger/Objects/class-use/
+* doc/objects/com/hci/geotagger/Objects/class-use/Adventure.html
+* doc/objects/com/hci/geotagger/Objects/class-use/Comment.html
+* doc/objects/com/hci/geotagger/Objects/class-use/CommentViewFragment.CommentAdapter.html
+* doc/objects/com/hci/geotagger/Objects/class-use/CommentViewFragment.ICommentViewCallBack.html
+* doc/objects/com/hci/geotagger/Objects/class-use/CommentViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/class-use/Compass.html
+* doc/objects/com/hci/geotagger/Objects/class-use/DescriptionViewFragment.IDescriptionViewCallback.html
+* doc/objects/com/hci/geotagger/Objects/class-use/DescriptionViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/class-use/GeoLocation.html
+* doc/objects/com/hci/geotagger/Objects/class-use/MapViewFragment.html
+* doc/objects/com/hci/geotagger/Objects/class-use/Tag.html
+* doc/objects/com/hci/geotagger/Objects/class-use/UserAccount.html
+* doc/objects/com/hci/geotagger/Objects/package-frame.html
+* doc/objects/com/hci/geotagger/Objects/package-summary.html
+* doc/objects/com/hci/geotagger/Objects/package-tree.html
+* doc/objects/com/hci/geotagger/Objects/package-use.html
+* doc/objects/constant-values.html
+* doc/objects/deprecated-list.html
+* doc/objects/help-doc.html
+* doc/objects/index-files/
+* doc/objects/index-files/index-1.html
+* doc/objects/index-files/index-10.html
+* doc/objects/index-files/index-11.html
+* doc/objects/index-files/index-12.html
+* doc/objects/index-files/index-13.html
+* doc/objects/index-files/index-14.html
+* doc/objects/index-files/index-15.html
+* doc/objects/index-files/index-16.html
+* doc/objects/index-files/index-17.html
+* doc/objects/index-files/index-18.html
+* doc/objects/index-files/index-2.html
+* doc/objects/index-files/index-3.html
+* doc/objects/index-files/index-4.html
+* doc/objects/index-files/index-5.html
+* doc/objects/index-files/index-6.html
+* doc/objects/index-files/index-7.html
+* doc/objects/index-files/index-8.html
+* doc/objects/index-files/index-9.html
+* doc/objects/index.html
+* doc/objects/overview-tree.html
+* doc/objects/package-list
+* doc/objects/resources/
+* doc/objects/resources/inherit.gif
+* doc/objects/serialized-form.html
+* doc/objects/stylesheet.css
+* doc/overview-tree.html
+* doc/package-list
+* doc/resources/
+* doc/resources/inherit.gif
+* doc/stylesheet.css
+* proguard-project.txt
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/.DS_Store => app/src/main/resources/.DS_Store
+* src/com/.DS_Store => app/src/main/resources/com/.DS_Store
+* src/com/hci/.DS_Store => app/src/main/resources/com/hci/.DS_Store
+* src/com/hci/geotagger/.DS_Store => app/src/main/resources/com/hci/geotagger/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

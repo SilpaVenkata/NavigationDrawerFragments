@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/profileview_username"
+            style="@style/GeotaggerLookAndFeelTextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:text="@string/profile_title"
+            android:textSize="@dimen/userprofile_header_textsize" />
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/profileview_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/image_border"
+            android:contentDescription="@string/profile_image_desc"
+            android:maxHeight="175dp"
+            android:maxWidth="175dp"
+            android:src="@drawable/ic_profile" />
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_photo"
+            android:orientation="vertical" >
+
+		    <com.hci.geotagger.gui.GravityBookFontTextView
+                android:id="@+id/profileview_locationtxt"
+                style="@style/GeotaggerLookAndFeelTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/location"
+                android:textSize="@dimen/userprofile_textsize"
+                android:textStyle="bold" />
+
+		    <com.hci.geotagger.gui.GravityBookFontTextView
+                android:id="@+id/profileview_aboutme"
+                style="@style/GeotaggerLookAndFeelTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="About Me"
+                android:textSize="@dimen/userprofile_textsize" />
+
+		    <com.hci.geotagger.gui.GravityBookFontTextView
+                android:id="@+id/profileview_quote"
+                style="@style/GeotaggerLookAndFeelTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Fav. Quote"
+                android:textSize="@dimen/userprofile_textsize" />
+
+            <TextView
+                android:id="@+id/profileview_email"
+                style="@style/GeotaggerLookAndFeelTextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Email Address"
+                android:textSize="@dimen/userprofile_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/text_layout"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <!-- android:layout_alignParentBottom="true" -->
+
+		    <com.hci.geotagger.gui.GravityBookFontButton
+                android:id="@+id/profileview_tagsBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="View Tags"
+                android:textSize="25sp" />
+
+		    <com.hci.geotagger.gui.GravityBookFontButton
+                android:id="@+id/profileview_editBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_user_profile.xml -->

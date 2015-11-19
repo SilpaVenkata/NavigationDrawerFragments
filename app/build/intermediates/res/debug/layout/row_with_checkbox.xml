@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="6dip"
+    android:paddingRight="@dimen/listheader_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/comment_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/GeotaggerLookAndFeelListHeaderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/row_txtName"
+                style="@style/GeotaggerLookAndFeelListHeaderTitleText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="left|top"
+                android:text="@string/text" />
+
+            <TextView
+                android:id="@+id/row_txtTime"
+                style="@style/GeotaggerLookAndFeelListHeaderTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:gravity="left"
+                android:text="01/01/13 12:00" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/listheader_padding" >
+
+            <CheckBox
+                android:id="@+id/row_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/row_txtdesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:lines="2"
+                android:maxLines="2"
+                android:padding="@dimen/listheader_padding"
+                android:text="@string/description"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/list_description_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/row_with_checkbox.xml -->

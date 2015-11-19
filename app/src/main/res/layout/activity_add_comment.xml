@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/Scrollview_Leftmargin"
+            android:paddingRight="@dimen/Scrollview_Leftmargin" >
+
+			<fragment
+			    android:name="com.hci.geotagger.activities.AddImageFragment"
+				android:id="@+id/addcomment_image_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/addcomment_image_height" />
+
+            <EditText
+                android:id="@+id/addcomment_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/scrollview_topmargin"
+                android:layout_weight=".2"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/addcomment_comment"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="4"
+                android:maxLines="5"
+                android:padding="@dimen/dataentry_textpadding"
+                android:singleLine="false"
+                android:textSize="@dimen/dataentry_textsize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addcomment_btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="5dp"
+        android:background="@drawable/bluebutton"
+        android:text="@string/add" />
+
+</LinearLayout>

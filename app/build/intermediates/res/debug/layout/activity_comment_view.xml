@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:animateOnClick="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/greenbutton"
+            android:drawableRight="@drawable/ic_largecomment"
+            android:minHeight="0dp"
+            android:minWidth="50dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Comments " />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/purplebutton"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/CommentLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/commentList"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/comment_label"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/commentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/commentbar"
+                    android:layout_weight="1"
+                    android:transcriptMode="alwaysScroll" >
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/commentbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4"
+                    android:gravity="bottom"
+                    android:paddingTop="3dp" >
+
+                    <ImageView
+                        android:id="@+id/tagview_commentimg"
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:contentDescription="@string/upload_image_comment"
+                        android:cropToPadding="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon" />
+
+                    <EditText
+                        android:id="@+id/tagview_commenttxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="@string/add_comment_hint"
+                        android:inputType="textCapSentences"
+                        android:maxLines="5" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/tagview_commentbtn"
+                        android:layout_width="@dimen/button_height"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight="1"
+                        android:background="@drawable/greenbutton"
+                        android:minWidth="0dp"
+                        android:text="@string/add" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_comment_view.xml -->

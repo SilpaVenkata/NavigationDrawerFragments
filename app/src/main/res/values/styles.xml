@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+        
+    <style name="GeotaggerTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/GeotaggerTheme.ActionBarStyle</item>
+    </style>
+    <style name="GeotaggerTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/page_header_background</item>
+<!-- 
+         <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">false</item>
+ -->
+        </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="ShadowText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <!-- Was supposed to be for custom tab widget style, but wasn't working -->
+    <style name="CustomTabTheme" parent="@android:style/Theme">
+        <item name="android:tabWidgetStyle">@style/CustomTabWidget</item>
+    </style>
+
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+        <item name="android:height">30dp</item>
+    </style>
+
+    <style name="CustomTabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    
+    <!-- These styles are defined to maintain the same look and feel on the screens -->
+    
+    <style name="GeotaggerLookAndFeelActivity">
+        <item name="android:background">#B2FFFF</item>
+    </style>
+
+    <style name="GeotaggerLookAndFeelShadowTextLarge">
+		<item name="android:textColor">@android:color/black</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textSize">32sp</item>
+   		<item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="GeotaggerLookAndFeelShadowTextMedium">
+		<item name="android:textColor">@android:color/black</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+   		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    
+    <style name="GeotaggerLookAndFeelTextLarge">
+		<item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+		<item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GeotaggerLookAndFeelTextMedium">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GeotaggerLookAndFeelPageHeaderText" parent="style/GeotaggerLookAndFeelShadowTextLarge" >
+        <item name="android:textSize">@dimen/pageheader_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="GeotaggerLookAndFeelListPageHeaderText" parent="style/GeotaggerLookAndFeelTextLarge" >
+        <item name="android:textSize">@dimen/pageheader_listactivity_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="GeotaggerLookAndFeelFieldLabelText" parent="GeotaggerLookAndFeelShadowTextMedium" >
+        <item name="android:textSize">@dimen/label_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="GeotaggerLookAndFeelEmptyListText" parent="style/GeotaggerLookAndFeelTextMedium" >
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="GeotaggerLookAndFeelCommentLabelText" parent="style/GeotaggerLookAndFeelTextMedium" >
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="GeotaggerLookAndFeelTagViewHeaderText" parent="GeotaggerLookAndFeelShadowTextMedium" >
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/tagviewheader_textsize</item>
+    </style>
+
+    <style name="GeotaggerLookAndFeelNewTagButton" parent="style/GeotaggerLookAndFeelTextMedium" >
+        <item name="android:minHeight">@dimen/newtag_button_minheight</item>
+		<item name="android:minWidth">@dimen/newtag_button_minwidth</item>
+        <item name="android:textSize">@dimen/newtag_button_textsize</item>
+    </style>
+    
+    <!-- Tag and Comment styles -->
+    
+    <style name="GeotaggerLookAndFeelListHeaderLayout" >
+        <item name="android:background">@color/listitem_header_background</item>
+        <item name="android:paddingBottom">@dimen/listheader_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/listheader_padding</item>
+		<item name="android:paddingRight">@dimen/listheader_padding_bottom</item>
+		<item name="android:paddingTop">@dimen/listheader_padding_bottom</item>
+	</style>
+	
+    <style name="GeotaggerLookAndFeelListHeaderTitleText" >
+        <item name="android:textSize">@dimen/listheader_title_textsize</item>
+        <item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+    
+    <style name="GeotaggerLookAndFeelListHeaderTimeText" >
+        <item name="android:textSize">@dimen/listheader_time_textsize</item>
+        <item name="android:textStyle">normal</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+
+	<!-- Tab Styles (TagViewActivity, AdventureViewActivity) -->
+    
+	<style name="GeotaggerLookAndFeelTabButton" >
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">@dimen/togglebutton_button_height</item>
+	    <item name="android:background">@drawable/toggle_button_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/togglebutton_text_color</item>
+        <item name="android:textSize">@dimen/tagview_button_textsize</item>
+		<item name="android:duplicateParentState">true</item>
+	</style>
+	
+	<style name="GeotaggerLookAndFeelTabIndicator" >
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">@dimen/togglebutton_selected_height</item>
+	    <item name="android:background">@drawable/toggle_button_indicator_background</item>
+		<item name="android:enabled">false</item>	    
+		<item name="android:duplicateParentState">true</item>
+	</style>
+	
+	<style name="GeotaggerLookAndFeelTabDivider" >
+        <item name="android:layout_width">2px</item>
+	    <item name="android:layout_height">@dimen/tagview_button_divider_height</item>
+	    <item name="android:background">@color/togglebutton_divider_color</item>
+	</style>
+		
+	
+    
+	<style name="GeotaggerLookAndFeelDividerHorizontal" >
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">1px</item>
+	    <item name="android:background">@color/divider_color</item>
+	</style>
+		
+	
+    
+    <style name="GeotaggerLookAndFeelListHeaderTitle" >
+		<item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/newtag_button_textsize</item>
+    </style>
+    
+    <style name="GeotaggerBackground">
+        <item name="android:background">#B2FFFF</item>
+    </style>
+
+    <!-- Image Button Styles -->
+    
+    <style name="GeotaggerImageButtonLayout">
+		<item name="android:layout_width">@dimen/image_button_layout_size</item>
+		<item name="android:layout_height">@dimen/image_button_layout_size</item>
+		<item name="android:layout_margin">@dimen/image_button_layout_margin</item>
+		<item name="android:gravity">center</item>
+		<item name="android:clickable">true</item>
+		<item name="android:background">@drawable/bluebutton</item>
+    </style>
+    <style name="GeotaggerImageButtonImage">
+		<item name="android:layout_width">@dimen/image_button_image_size</item>
+		<item name="android:layout_height">@dimen/image_button_image_size</item>
+		<item name="android:duplicateParentState">true</item>
+		    
+	</style>
+
+</resources>

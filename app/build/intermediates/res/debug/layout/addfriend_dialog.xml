@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="10dp" >
+ 
+    <TextView
+        android:id="@+id/profile_locationlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Search For A Friend!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+ 
+    <EditText
+        android:id="@+id/searchdlg_txtusername"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_text"
+        android:hint="Friend&apos;s Username"
+        android:maxLength="16"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textSize="28sp" >
+ 
+        <requestFocus />
+ 
+    </EditText>
+ 
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/addfriend_dialog.xml -->

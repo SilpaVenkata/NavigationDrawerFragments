@@ -1,0 +1,62 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <dimen name="main_double_button_height">170dp</dimen>
+    <dimen name="main_button_height">100dp</dimen>
+    <dimen name="button_height">62dp</dimen>
+    
+    <dimen name="pageheader_textsize">45dp</dimen>
+    <dimen name="pageheader_listactivity_textsize">50dp</dimen>
+    <dimen name="home_page_button_textsize">20sp</dimen>
+    <dimen name="tagviewheader_textsize">16dp</dimen>
+    
+    <dimen name="newtag_button_minheight">62dp</dimen>
+    <dimen name="newtag_button_minwidth">150dp</dimen>
+    <dimen name="newtag_button_textsize">25dp</dimen>
+
+    <dimen name="tabs_textsize">40dp</dimen>
+    <dimen name="tabs_tabheight">750dp</dimen>
+    
+    <dimen name="tagview_button_textsize">18dp</dimen>
+    <dimen name="tagview_image_height">325dp</dimen>
+    <dimen name="tagview_button_divider_height">45dp</dimen>
+    
+    <dimen name="togglebutton_button_height">65dp</dimen>
+    <dimen name="togglebutton_selected_height">8dp</dimen>
+    
+	<dimen name="advview_image_height">150dp</dimen>
+
+	<dimen name="detail_description_textsize">20dp</dimen>
+	<dimen name="detail_date_textsize">16dp</dimen>
+	<dimen name="detail_location_textsize">16dp</dimen>
+		
+	<dimen name="editprofile_image_size">218dp</dimen>
+	<dimen name="editprofile_label_textsize">32sp</dimen>
+	<dimen name="editprofile_button_margin">7dp</dimen>
+	<dimen name="editprofile_button_textsize">35sp</dimen>
+	
+	<!-- List Entry dimensions -->
+	<dimen name="list_people_textsize">18sp</dimen>
+	<dimen name="list_description_textsize">18sp</dimen>
+	<dimen name="listheader_padding">6dp</dimen>
+	<dimen name="listheader_padding_bottom">3dp</dimen>
+	<dimen name="listheader_title_textsize">18dp</dimen>
+	<dimen name="listheader_time_textsize">16dp</dimen>
+			
+	<!-- Data entry label dimensions -->
+    <dimen name="label_textsize">16dp</dimen>
+	
+	<!-- Data entry fields TextEdit dimensions -->
+	<dimen name="dataentry_textsize">22sp</dimen>
+	<dimen name="dataentry_textpadding">5dp</dimen>
+	<dimen name="dataentry_labelpadding">2dp</dimen>
+
+	<!-- Image Button sizes -->
+	<dimen name="image_button_layout_size">60dp</dimen>
+	<dimen name="image_button_image_size">52dp</dimen>
+	<dimen name="image_button_layout_margin">8dp</dimen>
+			
+</resources>

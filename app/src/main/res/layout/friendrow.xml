@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/friendrow_bg"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="60dp"
+    android:padding="6dip"
+    android:paddingRight="5dp" >
+
+    <ImageView
+        android:id="@+id/friendrow_thumbnail"
+        android:layout_width="@dimen/thumbnail_width"
+        android:layout_height="@dimen/thumbnail_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="6dip"
+        android:maxHeight="@dimen/thumbnail_height"
+        android:maxWidth="@dimen/thumbnail_width"
+        android:minHeight="@dimen/thumbnail_height"
+        android:minWidth="@dimen/thumbnail_width"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/friendrow_txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:gravity="left|top"
+        android:text="Friend Name"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

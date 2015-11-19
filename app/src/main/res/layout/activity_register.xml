@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".RegisterActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lbl_debug"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/GeotaggerLookAndFeelFieldLabelText"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/new_user_label"
+                android:textColorHint="@color/hint_color"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/reg_unameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/str_Username"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" >
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/reg_pwTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/str_Pass"
+                android:inputType="textPassword"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+
+            <EditText
+                android:id="@+id/reg_confirmTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:hint="@string/str_Pass_Confirm"
+                android:inputType="textPassword"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/reg_btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/Scrollview_Leftmargin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/purplebutton"
+                    android:includeFontPadding="true"
+                    android:shadowColor="@android:color/black"
+                    android:text="@string/cancel"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/reg_submitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/Scrollview_Leftmargin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/greenbutton"
+                    android:includeFontPadding="true"
+                    android:shadowColor="@android:color/black"
+                    android:text="@string/submit"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

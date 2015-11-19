@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commentExtended_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" 
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/commentExtended_layout"
+        style="@style/GeotaggerLookAndFeelActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluebutton"
+        android:padding="10dp" >
+
+        <com.hci.geotagger.gui.ScaleImageView
+            android:id="@+id/commentExtended_commentImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/comment_img_description"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/commentExtended_commentTag"
+            style="@style/GeotaggerLookAndFeelCommentLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentExtended_commentImg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/tag_comment" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_comment_extended_view.xml -->

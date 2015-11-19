@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hci.geotagger"
+    android:versionCode="3"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+    <!--
+    <permission android:name="com.example.googlemaps.permission.MAPS_RECEIVE" android:protectionLevel="signature"></permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    -->
+
+
+    <!-- Google Maps related permissions -->
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+
+    <!-- Network connectivity permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Access Google based webservices -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Optional permission for App measurement to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name="com.hci.geotagger.GeotaggerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Key required for use of Google Map v2 via Google Play Services -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC3F17hDLPz9qn5iPJFCJ77vdI6G8PUe0E" />
+        <!-- debug version   			 android:value="AIzaSyC3F17hDLPz9qn5iPJFCJ77vdI6G8PUe0E" /> -->
+        <!-- release version 	   			 android:value="AIzaSyBPqgZPZDD9Bg94V7Hbm60n2weO4DztdmQ"/> -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.hci.geotagger.activities.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.HomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.AddTagActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_tag"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.hci.geotagger.activities.AddCommentActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_comment"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.hci.geotagger.activities.TagListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_taglist"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.SelectFromListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_selecttaglist"
+            android:theme="@style/GeotaggerTheme" />
+        <activity
+            android:name="com.hci.geotagger.activities.TagViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tag_view"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="adjustPan" >
+
+            <!-- Kale commented below out because fragments were applied to global window space as opposed to just TagViewActivity -->
+            <!-- android:theme="@android:style/Theme.Dialog" -->
+
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.FriendListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_friend_list"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.UserProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.EditProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.AdvEditPeopleTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.AdvEditTagTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.AdventureListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_adventurelist"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.AdventureViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_adventureView"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.GroupListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_group_list"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.GroupViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_group_list"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.EditGroupActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_editGroup"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.AdvViewPeopleTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.AdvViewTagTabActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/GeotaggerTheme" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.EditAdventureActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_editAdventure"
+            android:theme="@style/GeotaggerTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.CommentViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.hci.geotagger.activities.unused.FullScreenImageActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="com.hci.geotagger.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/GeotaggerLookAndFeelActivity" 
+    android:orientation="vertical">
+    
+	<com.hci.geotagger.gui.ScaleImageView 
+        android:id="@+id/tag_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tagview_image_height"
+        android:maxHeight="@dimen/tagview_image_height"
+        android:contentDescription="@string/tag_pic_desc" 
+        android:src="@drawable/android_logo_white" />
+	
+	<!-- Row of toggle buttons -->
+	<TextView style="@style/GeotaggerLookAndFeelDividerHorizontal" />
+	
+	<LinearLayout
+		android:id="@+id/tab_buttons"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:background="@color/togglebutton_background_color"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:weightSum="3" >
+		
+	    <LinearLayout
+	        android:id="@+id/description_button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:enabled="true"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabButton"
+		        android:text="@string/description_text"
+	            />
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabIndicator" />
+		</LinearLayout>
+		
+	    <TextView style="@style/GeotaggerLookAndFeelTabDivider" />
+
+		<LinearLayout
+	        android:id="@+id/comments_button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:enabled="false"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabButton"
+		        android:text="@string/comments_text"
+	            />
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabIndicator" />
+		</LinearLayout>
+	        
+	    <TextView style="@style/GeotaggerLookAndFeelTabDivider" />
+	    
+		<LinearLayout
+	        android:id="@+id/map_button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:enabled="false"
+	        android:orientation="vertical" >
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabButton"
+		        android:text="@string/map_text"
+	            />
+	        <TextView
+	            style="@style/GeotaggerLookAndFeelTabIndicator" />
+		</LinearLayout>
+	        
+	</LinearLayout>
+	<TextView style="@style/GeotaggerLookAndFeelDividerHorizontal" />
+		
+	<FrameLayout
+	    android:id="@+id/tagViewContent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >	    
+	</FrameLayout>
+	
+	<LinearLayout
+	    android:id="@+id/mapViewContent"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		<fragment
+			android:id="@+id/map"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:name="com.google.android.gms.maps.MapFragment"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="6dip"
+    android:paddingRight="@dimen/listheader_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/comment_bg"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants" >
+		
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/listheader_padding" >
+
+            <ImageView
+                android:id="@+id/row_thumbnail"
+                android:layout_width="@dimen/thumbnail_width"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dip"
+                android:maxHeight="@dimen/thumbnail_height"
+                android:maxWidth="@dimen/thumbnail_width"
+                android:src="@drawable/icon" />
+
+			<TextView
+	            android:id="@+id/row_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:lines="2"
+                android:maxLines="2"
+                android:padding="@dimen/listheader_padding"
+                android:text="@string/description"
+                android:textColor="@android:color/black"
+            	android:textSize="@dimen/list_people_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/peoplerow.xml -->

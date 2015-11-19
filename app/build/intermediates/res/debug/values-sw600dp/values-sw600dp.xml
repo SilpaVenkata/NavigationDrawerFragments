@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
+    <dimen name="abc_action_bar_default_height_material">64dp</dimen>
+    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
+    <dimen name="abc_action_bar_navigation_padding_start_material">8dp</dimen>
+    <dimen name="abc_action_bar_overflow_padding_end_material">18dp</dimen>
+    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="advview_image_height">150dp</dimen>
+    <dimen name="button_height">62dp</dimen>
+    <dimen name="dataentry_labelpadding">2dp</dimen>
+    <dimen name="dataentry_textpadding">5dp</dimen>
+    <dimen name="dataentry_textsize">22sp</dimen>
+    <dimen name="detail_date_textsize">16dp</dimen>
+    <dimen name="detail_description_textsize">20dp</dimen>
+    <dimen name="detail_location_textsize">16dp</dimen>
+    <dimen name="editprofile_button_margin">7dp</dimen>
+    <dimen name="editprofile_button_textsize">35sp</dimen>
+    <dimen name="editprofile_image_size">218dp</dimen>
+    <dimen name="editprofile_label_textsize">32sp</dimen>
+    <dimen name="home_page_button_textsize">20sp</dimen>
+    <dimen name="image_button_image_size">52dp</dimen>
+    <dimen name="image_button_layout_margin">8dp</dimen>
+    <dimen name="image_button_layout_size">60dp</dimen>
+    <dimen name="label_textsize">16dp</dimen>
+    <dimen name="list_description_textsize">18sp</dimen>
+    <dimen name="list_people_textsize">18sp</dimen>
+    <dimen name="listheader_padding">6dp</dimen>
+    <dimen name="listheader_padding_bottom">3dp</dimen>
+    <dimen name="listheader_time_textsize">16dp</dimen>
+    <dimen name="listheader_title_textsize">18dp</dimen>
+    <dimen name="main_button_height">100dp</dimen>
+    <dimen name="main_double_button_height">170dp</dimen>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <dimen name="mr_media_route_controller_art_max_height">480dp</dimen>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="newtag_button_minheight">62dp</dimen>
+    <dimen name="newtag_button_minwidth">150dp</dimen>
+    <dimen name="newtag_button_textsize">25dp</dimen>
+    <dimen name="pageheader_listactivity_textsize">50dp</dimen>
+    <dimen name="pageheader_textsize">45dp</dimen>
+    <dimen name="tabs_tabheight">750dp</dimen>
+    <dimen name="tabs_textsize">40dp</dimen>
+    <dimen name="tagview_button_divider_height">45dp</dimen>
+    <dimen name="tagview_button_textsize">18dp</dimen>
+    <dimen name="tagview_image_height">325dp</dimen>
+    <dimen name="tagviewheader_textsize">16dp</dimen>
+    <dimen name="togglebutton_button_height">65dp</dimen>
+    <dimen name="togglebutton_selected_height">8dp</dimen>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <integer name="abc_max_action_buttons">5</integer>
+    <!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/values-sw600dp/refs.xml -->
+    <eat-comment/>
+    <item name="fragment_listfragment" type="layout">@layout/fragment_listfragment_grid</item>
+    <item name="fragment_listfragment2" type="layout">@layout/fragment_listfragment_grid2</item>
+</resources>

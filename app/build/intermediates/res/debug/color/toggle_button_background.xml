@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:color="#ffDCF0F7"
+		android:state_checked="true" />
+	<item
+	    android:color="#00000000"
+		android:state_checked="false" />
+	<item
+	    android:color="#ff5E9DC8"
+	    android:state_pressed="true" />
+</selector><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/color/toggle_button_background.xml -->

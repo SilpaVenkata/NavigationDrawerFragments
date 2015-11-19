@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <com.hci.geotagger.gui.ListHeaderTextView 
+        android:id="@+id/application_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:text="@string/app_title"
+        android:layout_marginBottom="36dip" />
+    
+    <com.hci.geotagger.gui.GravityBookFontEditText
+        android:id="@+id/login_unameTxt"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_hint"
+        android:inputType="text"
+        android:textSize="8pt"
+        android:gravity="center" />
+    
+    <com.hci.geotagger.gui.GravityBookFontEditText
+        android:id="@+id/login_pwTxt"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textSize="8pt"
+        android:layout_marginBottom="10dip"
+        android:gravity="center" />
+    
+    <com.hci.geotagger.gui.GravityBookFontButton
+        android:id="@+id/login_btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="8pt"
+        android:layout_marginBottom="100dip" />
+    
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout-sw600dp/activity_login.xml -->

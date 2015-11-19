@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight=".85"
+		android:gravity="center_vertical"
+		android:orientation="vertical" >
+		<com.hci.geotagger.gui.ScaleImageView
+			android:id="@+id/addimage_imgView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/scrollview_topmargin"
+			android:adjustViewBounds="true"
+			android:clickable="true"
+			android:contentDescription="@string/add_tag_image"
+			android:cropToPadding="false"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:longClickable="true"
+			android:padding="@dimen/image_padding"
+			android:scaleType="centerInside"
+			android:src="@drawable/no_image" />
+	</LinearLayout>
+    				
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:layout_weight=".15"
+		android:gravity="center_vertical"
+		android:orientation="vertical" >
+		<LinearLayout
+			android:id="@+id/addimage_imageCamera"
+			style="@style/GeotaggerImageButtonLayout" >
+			<ImageView
+				style="@style/GeotaggerImageButtonImage"
+				android:contentDescription="@string/desc_addimage_camerabutton"
+				android:background="@drawable/ic_camera"/>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/addimage_imageGallery"
+			style="@style/GeotaggerImageButtonLayout" >
+			<ImageView
+				style="@style/GeotaggerImageButtonImage"
+				android:contentDescription="@string/desc_addimage_gallerybutton"
+				android:background="@drawable/ic_gallery"/>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/addimage_imageRotate"
+			style="@style/GeotaggerImageButtonLayout" >
+			<ImageView
+				style="@style/GeotaggerImageButtonImage"
+				android:contentDescription="@string/desc_addimage_rotatebutton"
+				android:background="@drawable/ic_rotate_image"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

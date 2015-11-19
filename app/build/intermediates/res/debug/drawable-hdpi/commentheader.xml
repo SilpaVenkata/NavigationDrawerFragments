@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+   <solid android:color="#db8aff" />
+   <stroke android:width="2dip" android:color="@android:color/white"/>
+   
+</shape><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/drawable-hdpi/commentheader.xml -->

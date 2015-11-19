@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General Strings -->
+    
+	<string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="load">Load</string>
+    
+    <string name="tags_text">Tags</string>
+    <string name="people_text">People</string>
+    <string name="members_text">Members</string>
+    <string name="map_text">Map</string>
+   	<string name="adventures_text">Adventures</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    
+    <string name="main_adventures">Adventures</string>
+    <string name="main_groups">Groups</string>
+    
+    <string name="app_name">Geotagger</string>
+    <string name="app_title">geotagger</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_register">Sign Up</string>
+    <string name="invalid_login">Username or Password was incorrect. Please try again.</string>
+    <string name="unknown_error">Unknown error. Please try again.</string>
+    <string name="unknown_error_response_null">Response is null.</string>
+    <string name="unknown_error_try_catch">Try catch fail.</string>
+    <string name="title_activity_tag_view">TagView</string>
+    
+    <string name="title_activity_group_list">GroupList</string>
+    <string name="title_activity_group_view">GroupView</string>
+    <string name="title_grouplist_all">All Groups</string>
+    <string name="title_grouplist_ownerof">My Groups</string>
+    <string name="title_grouplist_memberof">Groups</string>
+    
+    <string name="select_filter">Select Filter</string>
+	<string name="filter_all">Show All</string>
+	<string name="filter_myadventures">Show Mine</string>
+	<string name="filter_memberof">Show Member Of</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+
+        <item> My Profile </item>
+        <item> Adventures </item>
+        <item> Groups </item>
+        <item> Tags </item>
+        <item> Add Image </item>
+        <item> Comments/Suggestions </item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <array name="nav_drawer_icons">
+        <item> @drawable/ndprofile </item>
+        <item> @drawable/ndadventureicon </item>
+        <item> @drawable/ndgroups </item>
+        <item> @drawable/ndtags</item>
+        <item> @drawable/_ic_addfriend</item>
+        <item> @drawable/ndcomments </item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    <!-- For phone version of TagViewActivity -->
+	<string name="title_activity_tag_view_phone">TagView</string>   
+ 
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="profile_image_desc">Profile Image</string>
+
+    <string name="title_activity_add_comment">AddCommentActivity</string>
+    <string name="title_activity_add_tag">AddTagActivity</string>
+    <string name="title_activity_taglist">My Tags</string>
+    <string name="title_activity_selecttaglist">SelectTagListActivity</string>
+    <string name="list_no_adventures">No Adventures to display.</string>
+    <string name="list_no_advPeople">No People in Adventure.</string>
+    <string name="dlg_tagimg_title">Select Tag Image</string>
+    <string name="add_tag_orig_location_lbl">Original location:</string>
+    <string name="add_tag_no_orig_location">No location set</string>
+    
+    <string name="title_activity_adventurelist">Adventures</string>
+    <string name="title_adventurelist_all">All Adventures</string>
+    <string name="title_adventurelist_ownerof">My Adventures</string>
+    <string name="title_adventurelist_memberof">Adventures</string>
+    
+    <string name="title_activity_adventureView">Viewing Adventure</string>
+    <string name="title_activity_editAdventure">Editing Adventure</string>
+    <string name="title_activity_editGroup">Editing Group</string>
+    
+
+    <style name="ratingDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="list_no_friends">No friends have been added yet. Click the + to search!</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="unknown_distance">\?\?.\?\? m</string>
+    
+    <!-- Layout-Specific Strings -->
+    
+    <!-- activity_add_comment -->
+    <string name="comment_label">Comments</string>
+    <string name="upload_image_comment">Comment image</string>
+    <string name="add_comment_hint">Add a comment</string>
+    <string name="new_comment">New Comment</string>
+    <string name="edit_comment">Edit Comment</string>
+    <string name="addcomment_comment">Add a comment</string>
+    <string name="add_comment">Add Comment</string>
+    
+    <!-- activity_add_tag -->
+    <string name="new_tag">New Tag</string>
+    <string name="edit_tag">Edit Tag</string>
+    <string name="picture">Picture</string>
+    <string name="add_tag_image">Add Tag Activity Image</string>
+    <string name="tag_description">Tag Description</string>
+    <string name="use_gps">Use GPS Location</string>
+    <string name="tag_location">Tag Location Description</string>
+    
+    <!-- activity_tag_view -->
+    <string name="rating_text">0</string>
+    <string name="tagged_by">Tagged by: User at 01/01/2000</string>
+    <string name="description_text">Description</string>
+    <string name="gps_location">GPS Location: </string>
+    <string name="lat_long_text">Latitude, Longitude</string>
+    <string name="current_gps">Current GPS: </string>
+    <string name="location_unavailable">Location Not Available</string>
+    <string name="triangle_description">Triangle for Compass</string>
+    <string name="google_map">Google   \/   Map</string>
+    <string name="comments_text">Comments</string>
+    <string name="image_description">uploadImg</string>
+    
+    <!-- activity_adventure_view_wtabs -->
+    <string name="edit">Edit</string>
+    
+    <!-- activity_adventurelist -->
+    <string name="adventures_title">Adventures</string>
+    <string name="username_adventures">Username\&apos;s Adventures</string>
+    <string name="create_adventure">Create New Adventure</string>
+
+    <!-- activity_grouplist -->
+    <string name="group_list_title">Groups</string>
+    
+    <!-- activity_comment_extended_view -->
+    <string name="comment_img_description">Comment Extended View Image</string>
+    <string name="tag_comment">Tag Comment</string>
+    
+    <!-- activity_edit_adv_people_tab -->
+    <string name="add_user">Add User</string>
+    
+    <!-- activity_edit_adv_tag_tab -->
+    <string name="add_new_tag">Add New Tag</string>
+    <string name="add_existing_tag">Add Existing Tag</string>
+    
+    <!-- activity_edit_group -->
+    <string name="group_name_hint">Group Name</string>
+    <string name="group_description">Group Description</string>
+    <string name="group_add_tags">Select Tags</string>
+    <string name="group_add_people">Select Members</string>
+    <string name="group_add_adventures">Select Adventures</string>
+    <string name="add_group_success">Group added!</string>
+    <string name="add_group_failure">Failed to add Group!</string>
+    <string name="update_group_success">Group updated!</string>
+    <string name="update_group_failure">Failed to update Group!</string>
+    
+    <!-- activity_edit_adventure -->
+    <string name="adventure_name_hint">Adventure Name</string>
+    <string name="adventure_description">Adventure Description</string>
+    <string name="adventure_add_tags">Select Tags</string>
+    <string name="adventure_add_people">Select People</string>
+    <string name="add_adventure_success">Adventure added!</string>
+    <string name="add_adventure_failure">Failed to add Adventure!</string>
+    <string name="update_adventure_success">Adventure updated!</string>
+    <string name="update_adventure_failure">Failed to update Adventure!</string>
+    
+    <!-- activity_user_profile -->
+    <string name="profile_title">Profile</string>
+    
+    <!-- activity_edit_profile -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_profile_img_btn">Edit Profile Image Button</string>
+    <string name="edit_profile_img">Edit Profile Image</string>
+    <string name="about_me">About Me:</string>
+    <string name="about_me_hint">About Me</string>
+    <string name="favorite_quote">Favorite Quote:</string>
+    <string name="favorite_quote_hint">Favorite Quote</string>
+    <string name="email_address">E-Mail Address:</string>
+    <string name="email_address_hint">E-Mail Address</string>
+    
+    <!-- activity_friend_list -->
+    <string name="friends_header">Username\&apos;s Friends</string>
+    
+    <!-- activity_home_limited_adventures -->
+    <string name="logout">Logout</string>
+    <string name="feedback">Comments/Suggestions</string>
+    
+    <!-- activity_home -->
+    <string name="my_tags">My Tags</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="add_adventure">Add Adventure</string>
+    <string name="friends">Friends</string>
+    
+    <!-- activity_login -->
+    <string name="login_caps">LOGIN</string>
+    <string name="login">Login</string>
+    <string name="new_user">New? Click here to start!</string>
+    <string name="login_img_desc">Login Image</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    
+    <!-- activity_register -->
+    <string name="register">Register</string>
+    <string name="new_user_label">Please fill in the fields below to create 
+        an account and get started!</string>
+    <string name="str_Username">Username</string>
+    <string name="str_Pass">Password</string>
+    <string name="str_Pass_Confirm">Confirm Password</string>
+    <string name="submit">Submit</string>
+    
+    <!-- activity_taglist -->
+    <string name="tags_title">Tags</string>
+    <string name="username_tags">Username\&apos;s Tags</string>
+    <string name="list_no_tags">No Tags to display.</string>
+    
+    <!-- Common Strings Between Layouts -->
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="tag_name">Tag Name</string>
+    <string name="location">Location</string>
+    <string name="temp_name">Temp Name</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="location_text">Location: </string>
+    <string name="save">Save</string>
+    <string name="welcome">Welcome</string>
+    <string name="adventures">Adventures</string>
+    <string name="my_profile">My Profile</string>
+    <string name="text">Text</string>
+    
+    <string name="fragment_description_label_date">Label Date</string>
+    
+    <string name="fragment_description_timestamp">TimeStamp</string>
+    
+    <string name="fragment_description_label_location">Location:</string>
+    
+    <string name="fragment_description_location">Description Location</string>
+    
+    <string name="gps_location_unknown">Unknown</string>
+    <string name="gps_no_signal">No signal</string>
+    
+    <string name="tag_view_header">TagView Header</string>
+    
+    <string name="tag_pic_desc">Tag Pic Desc</string>
+    
+    <!-- Adventure View -->
+    <string name="activity_adventure_list">Activity Adventure List</string>
+    <string name="adventure_title"></string>
+    <string name="adventure_pic_desc"></string>
+    <string name="adventure_toggle_description"></string>
+    <string name ="adventure_toggle_users"></string>
+    <string name= "adventure_toggle_map"></string>
+    
+    <!-- SelectFromListActivity -->
+    <string name="selectRecords_title_default" >Select Records</string>
+    <string name="selectRecords_title_tags" >Select Tags</string>
+    <string name="selectRecords_title_people" >Select People</string>
+    <string name="selectRecords_title_friends" >Select Friends</string>
+    <string name="selectRecords_title_adventures" >Select Adventures</string>
+    
+    <!-- Strings for the menu items -->
+    <string name="menu_add">Add</string>
+    <string name="menu_edit">Edit</string>
+	<string name="menu_logout">Logout</string>
+	<string name="menu_home">Home</string>
+	<string name="menu_delete_tag">Delete Tag</string>
+	<string name="menu_select_all">Select All</string>
+	<string name="menu_filter">Filter</string>
+	
+	<!-- OK Cancel dialog -->
+	<string name="dialog_deletetag_message">Delete Tag?</string>
+
+	<!-- Progress strings -->
+    <string name="progress_loggingin">Logging in...</string>
+    <string name="progress_loading_records">Loading records...</string>
+    <string name="progress_loading">Loading..</string>
+    <string name="progress_registration">Registration in progress...</string>
+    <string name="progress_retrieving_tags">Retrieving tags...</string>
+    <string name="progress_saving_changes">Saving Changes...</string>
+    <string name="progress_add_adventure">Creating adventure...</string>
+    <string name="progress_add_tag">Creating tag...</string>
+    <string name="progress_adding_tag">Adding tag...</string>
+    <string name="progress_deleting_tag">Deleting tag...</string>
+    <string name="progress_deleting_tags">Deleting tags...</string>
+    <string name="progress_retrieving_users">Retrieving users...</string>
+    <string name="progress_deleting_person">Deleting person...</string>
+    <string name="progress_adding_person">Adding person...</string>
+    <string name="progress_removing_friend">Removing friend...</string>
+    <string name="progress_adding_friend">Adding friend...</string>
+    <string name="progress_retrieving_friends">Retrieving friends...</string>
+    <string name="progress_updating_list">Updating List...</string>
+    <string name="progress_adding_comment">Adding comment ...</string>
+    <string name="progress_removing_comment">Removing Comment...</string>
+    <string name="progress_retrieving_comments">Retrieving comments...</string>
+    <string name="progress_retrieving_adventures">Retrieving adventures...</string>
+    <string name="progress_deleting_adventure">Deleting adventure...</string>
+    <string name="progress_updating_adventure">Updating adventure...</string>
+    <string name="progress_rotate_image">Rotating image...</string>
+    <string name="progress_retrieving_groups">Retrieving groups...</string>
+    <string name="progress_add_group">Creating group...</string>
+    <string name="progress_updating_group">Updating group...</string>
+    
+    <string name="toast_problem_loadingimage">Problem loading image, please try again.</string>
+    <string name="toast_problem_savingimage">Problem saving image!</string>
+    <string name="toast_problem_tagneedsname">The tag needs a name!</string>
+    <string name="toast_acquiringsignal">Acquiring signal, please wait</string>
+    <string name="toast_adventure_deleted">Adventure Deleted!</string>
+    <string name="toast_missing_adv_fields">Adventure needs name and description!</string>
+    <string name="toast_imageupload_failure">Failed to upload image!</string>
+    <string name="toast_addtag_failure">Failed to add Tag!</string>
+    <string name="toast_addtag_success">Tag added</string>
+    <string name="toast_edittag_failure">Failed to update Tag!</string>
+    <string name="toast_edittag_success">Tag updated</string>
+    <string name="toast_addadventuretag_failure">Failed to add Adventure Tag relationship!</string>
+    <string name="toast_addcomment_success">Comment added</string>
+    <string name="toast_addcomment_failure">Failed to add comment!</string>
+    <string name="toast_enter_comment">Enter a comment!</string>
+    <string name="toast_problem_commentneedscomment">Please enter a comment</string>
+    <string name="toast_deletetag_failure">Failure Deleting Tag</string>
+    <string name="toast_deletetag_success">"Tag Deleted!"</string>
+    <string name="toast_uploadimage_failure">Failure to upload image!</string>
+    <string name="toast_editprofile_failure">Failure to save profile!</string>
+    <string name="toast_editprofile_success">Updated your profile</string>
+    
+    <string name="desc_addimage_camerabutton">Start camera application button</string>
+    <string name="desc_addimage_gallerybutton">Start gallery application button</string>
+    <string name="desc_addimage_rotatebutton">Rotate image button</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_home"
+          android:title="@string/menu_home" />
+    <item android:id="@+id/action_logout"
+          android:title="@string/menu_logout" />
+</menu>
+
+
+<!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/menu/basic_options.xml -->

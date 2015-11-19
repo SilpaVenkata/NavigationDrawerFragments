@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GeotaggerLookAndFeelActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/groupEdit_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/Scrollview_Leftmargin"
+                android:layout_marginRight="@dimen/Scrollview_Leftmargin"
+                android:layout_marginTop="@dimen/scrollview_topmargin"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="@string/group_name_hint"
+                android:inputType="textCapSentences"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/groupEdit_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/scrollview_topmargin"
+                android:layout_marginLeft="@dimen/Scrollview_Leftmargin"
+                android:layout_marginRight="@dimen/Scrollview_Leftmargin"
+                android:layout_marginTop="@dimen/scrollview_topmargin"
+                android:layout_weight="2.11"
+                android:background="@drawable/select_text"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/group_description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="4"
+                android:singleLine="false"
+                android:padding="@dimen/dataentry_textpadding"
+                android:textSize="@dimen/dataentry_textsize" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/tab_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/togglebutton_background_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/tags_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="false"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/GeotaggerLookAndFeelTabButton"
+                android:text="@string/tags_text" />
+
+            <TextView style="@style/GeotaggerLookAndFeelTabIndicator" />
+        </LinearLayout>
+
+        <TextView style="@style/GeotaggerLookAndFeelTabDivider" />
+
+        <LinearLayout
+            android:id="@+id/members_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="false"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/GeotaggerLookAndFeelTabButton"
+                android:text="@string/members_text" />
+
+            <TextView style="@style/GeotaggerLookAndFeelTabIndicator" />
+        </LinearLayout>
+
+        <TextView style="@style/GeotaggerLookAndFeelTabDivider" />
+
+        <LinearLayout
+            android:id="@+id/adventure_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:enabled="false"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/GeotaggerLookAndFeelTabButton"
+                android:text="@string/adventures_text" />
+
+            <TextView style="@style/GeotaggerLookAndFeelTabIndicator" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView style="@style/GeotaggerLookAndFeelDividerHorizontal" />
+
+    <ListView
+        android:id="@+id/groupEdit_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollingCache="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/groupEdit_addData"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight=".5"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bluebutton"
+            android:text="@string/group_add_tags" />
+
+        <Button
+            android:id="@+id/groupEdit_btnOk"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight=".5"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bluebutton"
+            android:text="@string/add" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/sreddy/Tutorials/Fall%202015/SReddyNavigationDrawer/StudioProjects/Geotagger/app/src/main/res/layout/activity_edit_group.xml -->
